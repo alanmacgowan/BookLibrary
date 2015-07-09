@@ -1,4 +1,6 @@
-﻿using BookLibrary.Service.Abstract;
+﻿using AutoMapper;
+using BookLibrary.Models;
+using BookLibrary.Service.Abstract;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,9 +23,9 @@ namespace BookLibrary.Controllers
         // GET: Book
         public ActionResult Index()
         {
-            var bookList = _bookService.GetAllBooks().ToList();
+            var bookList = _bookService.GetAllBooks();
 
-            return View(bookList);
+            return View(bookList.Select(Mapper.Map<BookViewModel>).ToList());
         }
     }
 }

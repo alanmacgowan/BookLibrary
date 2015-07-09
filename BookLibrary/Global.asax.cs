@@ -19,6 +19,7 @@ namespace BookLibrary
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             DependencyResolver.SetResolver(new NinjectDependencyResolver());
             ControllerBuilder.Current.SetControllerFactory(new NinjectDependencyResolver());
+            MappingConfig.RegisterMappings();
         }
     }
 }
