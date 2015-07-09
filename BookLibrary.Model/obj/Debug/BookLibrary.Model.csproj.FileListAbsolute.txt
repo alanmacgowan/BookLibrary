@@ -1,0 +1,6 @@
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\bin\Debug\BookLibrary.Model.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\bin\Debug\BookLibrary.Model.pdb
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\obj\Debug\BookLibrary.Model.csprojResolveAssemblyReference.cache
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\obj\Debug\BookLibrary.Model.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\obj\Debug\BookLibrary.Model.pdb
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Model\bin\Debug\BookLibrary.Model.dll.config

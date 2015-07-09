@@ -1,0 +1,11 @@
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\obj\Debug\BookLibrary.Service.csprojResolveAssemblyReference.cache
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Service.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Service.pdb
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Data.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Model.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\EntityFramework.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Data.pdb
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\BookLibrary.Model.pdb
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\bin\Debug\EntityFramework.xml
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\obj\Debug\BookLibrary.Service.dll
+c:\users\alan\documents\visual studio 2013\Projects\BookLibrary\BookLibrary.Service\obj\Debug\BookLibrary.Service.pdb
