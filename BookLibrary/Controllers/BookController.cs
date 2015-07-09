@@ -24,8 +24,13 @@ namespace BookLibrary.Controllers
         public ActionResult Index()
         {
             var bookList = _bookService.GetAllBooks();
+            var booksVMList = new List<BookViewModel>();
+            if (bookList != null)
+            {
+                booksVMList = bookList.Select(Mapper.Map<BookViewModel>).ToList();
+            }
 
-            return View(bookList.Select(Mapper.Map<BookViewModel>).ToList());
+            return View(booksVMList);
         }
     }
 }
