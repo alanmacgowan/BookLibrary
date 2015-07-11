@@ -13,10 +13,12 @@ namespace BookLibrary.Models
 
         [Required]
         [Display(Name = "Book Title")]
-        public string Name { get; set; }
+        public string Title { get; set; }
 
         public string Description { get; set; }
 
+        public string ISBN { get; set; }
+        
         [Display(Name = "Year Published")]
         public int Year { get; set; }
 

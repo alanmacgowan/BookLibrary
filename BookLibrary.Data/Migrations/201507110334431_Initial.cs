@@ -22,8 +22,9 @@ namespace BookLibrary.Data.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
+                        Title = c.String(nullable: false),
                         Description = c.String(),
+                        ISBN = c.String(),
                         Year = c.Int(nullable: false),
                         Author_Id = c.Int(),
                     })

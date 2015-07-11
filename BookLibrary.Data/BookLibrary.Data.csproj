@@ -50,9 +50,9 @@
     <Compile Include="Abstract\IBookRepository.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="BookLibraryContext.cs" />
-    <Compile Include="Migrations\201507090323296_Initial.cs" />
-    <Compile Include="Migrations\201507090323296_Initial.Designer.cs">
-      <DependentUpon>201507090323296_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201507110334431_Initial.cs" />
+    <Compile Include="Migrations\201507110334431_Initial.Designer.cs">
+      <DependentUpon>201507110334431_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +70,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507090323296_Initial.resx">
-      <DependentUpon>201507090323296_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201507110334431_Initial.resx">
+      <DependentUpon>201507110334431_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
