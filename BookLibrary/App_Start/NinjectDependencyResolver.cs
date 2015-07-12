@@ -1,5 +1,5 @@
-﻿using BookLibrary.Data.Abstract;
-using BookLibrary.Data.Repositories;
+﻿using BookLibrary.Repositories.Abstract;
+using BookLibrary.Repositories.Repositories;
 using BookLibrary.Service.Abstract;
 using BookLibrary.Service.Services;
 using Ninject;
@@ -14,7 +14,7 @@ using System.Web.Routing;
 namespace BookLibrary.App_Start
 {
 
-    public class NinjectDependencyResolver : DefaultControllerFactory, System.Web.Mvc.IDependencyResolver
+    public class NinjectDependencyResolver : DefaultControllerFactory, IDependencyResolver
     {
 
         private IKernel ninjectKernel;

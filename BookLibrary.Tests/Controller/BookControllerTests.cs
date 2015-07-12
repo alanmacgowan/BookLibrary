@@ -94,8 +94,8 @@ namespace BookLibrary.Tests.Controller
         {
             //Arrange
             var books = new List<Book>();
-            books.Add(new Book { Id = 1, Name = "aaa", Description = "a", Year = 1992 });
-            books.Add(new Book { Id = 2, Name = "bbb", Description = "b", Year = 1994 });
+            books.Add(new Book { Id = 1, Title = "aaa", Description = "a", Year = 1992 });
+            books.Add(new Book { Id = 2, Title = "bbb", Description = "b", Year = 1994 });
 
             _mockService.Stub(x => x.GetAllBooks()).Return(books);
 

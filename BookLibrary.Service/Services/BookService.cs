@@ -1,4 +1,4 @@
-﻿using BookLibrary.Data.Abstract;
+﻿using BookLibrary.Repositories.Abstract;
 using BookLibrary.Model;
 using BookLibrary.Service.Abstract;
 using System;

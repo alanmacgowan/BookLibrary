@@ -44,14 +44,17 @@
     <Compile Include="Services\BookService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BookLibrary.Data\BookLibrary.Data.csproj">
-      <Project>{3a805210-2f3b-4fe4-9194-b1163d304dfb}</Project>
-      <Name>BookLibrary.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BookLibrary.Model\BookLibrary.Model.csproj">
       <Project>{82dd8ce7-3b38-4b30-8715-aa07e7c9129a}</Project>
       <Name>BookLibrary.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BookLibrary.Repositories\BookLibrary.Repositories.csproj">
+      <Project>{0b605ddd-f339-47e5-b04c-859a2406e202}</Project>
+      <Name>BookLibrary.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

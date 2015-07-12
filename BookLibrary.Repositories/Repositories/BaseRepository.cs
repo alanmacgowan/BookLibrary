@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookLibrary.Data.Repositories
+namespace BookLibrary.Repositories.Repositories
 {
     public class BaseRepository<T, TContext>
         where T : BaseEntity
