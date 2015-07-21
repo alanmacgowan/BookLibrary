@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BookLibrary.Data;
+using System.Data.Entity;
 
 namespace BookLibrary.Repositories.Repositories
 {
@@ -21,6 +22,11 @@ namespace BookLibrary.Repositories.Repositories
         public IQueryable<Book> GetBooksByAuthor(int authorId)
         {
             return Set.Where(b => b.Author.Id == authorId);
+        }
+
+        public async Task<IList<Book>> GetBooksByAuthorAsync(int authorId)
+        {
+            return await Set.Where(b => b.Author.Id == authorId).ToListAsync();
         }
 
 

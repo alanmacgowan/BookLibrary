@@ -43,5 +43,33 @@ namespace BookLibrary.Service.Services
             var book = _bookRepository.GetById(id);
             _bookRepository.Delete(book);
         }
+
+
+        public async Task<IEnumerable<Book>> GetAllBooksAsync()
+        {
+            return await _bookRepository.GetAllAsync();
+        }
+
+        public async Task<Book> GetBookByIdAsync(int id)
+        {
+            return await _bookRepository.GetByIdAsync(id);
+        }
+
+        public async Task<Book> UpdateBookAsync(Book book)
+        {
+            return await _bookRepository.UpdateAsync(book);
+        }
+
+        public async Task<Book> CreateBookAsync(Book book)
+        {
+            return await _bookRepository.InsertAsync(book);
+        }
+
+        public async Task DeleteBookAsync(int id)
+        {
+            var book = await _bookRepository.GetByIdAsync(id);
+            _bookRepository.DeleteAsync(book);
+        }
+
     }
 }

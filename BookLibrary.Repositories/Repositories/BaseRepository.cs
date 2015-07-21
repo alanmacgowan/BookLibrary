@@ -75,6 +75,65 @@ namespace BookLibrary.Repositories.Repositories
             return Set.Where(s => s.Id == id).SingleOrDefault();
         }
 
+        public virtual async Task<T> InsertAsync(T entity)
+        {
+            T savedEntity = Set.Add(entity);
+
+            try
+            {
+                await Context.SaveChangesAsync();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                Exception raise = dbEx;
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        string message = string.Format("{0}:{1}", validationErrors.Entry.Entity.ToString(), validationError.ErrorMessage);
+                        raise = new InvalidOperationException(message, raise);
+                    }
+                }
+                throw raise;
+            }
+
+            return savedEntity;
+        }
+
+        public virtual async Task<T> UpdateAsync(T entity)
+        {
+            Context.Entry(entity).State = EntityState.Modified;
+            await Context.SaveChangesAsync();
+            return entity;
+        }
+
+        public virtual async Task DeleteAsync(T entity)
+        {
+            if (entity == null) throw new ArgumentNullException("entity");
+            Set.Attach(entity);
+            Set.Remove(entity);
+            await Context.SaveChangesAsync();
+        }
+
+        public virtual async Task DeleteRangeAsync(IQueryable<T> entities)
+        {
+            if (entities == null) throw new ArgumentNullException("entities");
+            Set.RemoveRange(entities);
+            await Context.SaveChangesAsync();
+        }
+
+        public virtual async Task<IList<T>> GetAllAsync()
+        {
+            return await Set.ToListAsync();
+        }
+
+        public virtual async Task<T> GetByIdAsync(int id)
+        {
+            return await Set.Where(s => s.Id == id).SingleOrDefaultAsync();
+        }
+
+
+
         public void Dispose()
         {
             if (Context != null)

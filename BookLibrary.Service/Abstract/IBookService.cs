@@ -14,5 +14,11 @@ namespace BookLibrary.Service.Abstract
         Book UpdateBook(Book book);
         Book CreateBook(Book book);
         void DeleteBook(int id);
+
+        Task<IEnumerable<Book>> GetAllBooksAsync();
+        Task<Book> GetBookByIdAsync(int id);
+        Task<Book> UpdateBookAsync(Book book);
+        Task<Book> CreateBookAsync(Book book);
+        Task DeleteBookAsync(int id);
     }
 }

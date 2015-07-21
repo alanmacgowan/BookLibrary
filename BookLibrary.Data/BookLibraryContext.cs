@@ -11,16 +11,15 @@ namespace BookLibrary.Data
     public class BookLibraryContext : DbContext
     {
 
-
         public BookLibraryContext()
             : base("name=BookLibraryContext")
         {
+            Database.SetInitializer<BookLibraryContext>(new BookLibraryDBInitializer());
         }
 
         public DbSet<Book> Books { get; set; }
 
         public DbSet<Author> Authors { get; set; }
-
 
     }
 }

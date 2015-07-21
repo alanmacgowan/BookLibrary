@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookLibraryContext.cs" />
+    <Compile Include="BookLibraryDBInitializer.cs" />
     <Compile Include="Migrations\201507110334431_Initial.cs" />
     <Compile Include="Migrations\201507110334431_Initial.Designer.cs">
       <DependentUpon>201507110334431_Initial.cs</DependentUpon>
