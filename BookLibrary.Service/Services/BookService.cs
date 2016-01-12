@@ -44,7 +44,6 @@ namespace BookLibrary.Service.Services
             _bookRepository.Delete(book);
         }
 
-        //Async methods
         public async Task<IEnumerable<Book>> GetAllBooksAsync()
         {
             return await _bookRepository.GetAllAsync();
