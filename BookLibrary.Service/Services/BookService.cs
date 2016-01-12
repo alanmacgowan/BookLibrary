@@ -38,6 +38,7 @@ namespace BookLibrary.Service.Services
             return _bookRepository.Insert(book);
         }
 
+
         public void DeleteBook(int id)
         {
             var book = _bookRepository.GetById(id);
